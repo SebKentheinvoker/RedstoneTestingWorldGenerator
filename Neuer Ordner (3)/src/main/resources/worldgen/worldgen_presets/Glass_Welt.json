@@ -1,0 +1,9 @@
+{
+  "preset": "Glass welt",
+  "layers": [
+    {
+      "block": "white_stained_glass",
+      "height": 1
+    }
+  ]
+}

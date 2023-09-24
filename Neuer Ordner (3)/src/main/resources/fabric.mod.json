@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "redstone-testing-world-generator",
+	"version": "${version}",
+	"name": "Redstone Testing world generator",
+	"description": "A Redstone Testing World Generation Template mod",
+	"authors": [
+		"SebKen"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "empty",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sebken.modid.SebKenMod"
+		],
+		"client": [
+			"net.sebken.modid.SebKenModClient"
+		],
+		"fabric-datagen": [
+			"net.sebken.modid.SebKenModDataGenerator"
+		]
+	},
+	"mixins": [
+		"redstone-testing-world-generator.mixins.json",
+		{
+			"config": "redstone-testing-world-generator.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "preset": "Witchfarmvoid",
+  "biome": "minecraft:swamp",
+  "structures": {
+    "stronghold": {
+      "spacing": 32,
+      "separation": 8,
+      "count": 128
+    },
+    "witch_hut": {
+      "spacing": 48,
+      "separation": 12,
+      "count": 32
+    }
+  },
+  "layers": [
+    {
+      "block": "minecraft:bedrock",
+      "height": 1
+    },
+    {
+      "block": "minecraft:air",
+      "height": 1
+    }
+  ]
+}
